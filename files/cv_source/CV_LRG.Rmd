@@ -1,9 +1,9 @@
 ---
 name: Laura Roldan-Gomez
-qualifications: PhD(Candidate), MRes, MSc, BSc
-position: PhD Candidate in Advanced Quantitative Methods 
+qualifications: PhD, MRes, MSc, BSc
+position: Research Fellow, Centre for Climate Communication and Data Science (C3DS)
 address: University of Exeter, UK
-email: lr480@exeter.ac.uk
+email: l.roldan-gomez2@exeter.ac.uk
 date: "`r format(Sys.time(), '%B, %Y')`"
 headcolor: 414141
 docname: Curriculum Vitae
@@ -24,7 +24,7 @@ library(vitae)
 library(tibble)
 tribble(
   ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "PhD Candidate Advanced Quantitative Methods ", "Expected 2025", "University of Exeter", "United Kingdom",
+  "PhD Advanced Quantitative Methods ", "2025", "University of Exeter", "United Kingdom",
   "MRes. Advanced Quantitative Methods", "2020", "", "",
   "MRes. Sustainable Futures", "2019", "University of Bristol", "United Kingdom",
   "MSc. Environmental Management", "2014", "Universidad Javeriana", "Colombia",
@@ -50,7 +50,7 @@ tribble(
 library(tibble)
 tribble(
   ~ Title,
-"- Social-Ecological networks and risk: how is perceived and ecological risk associated with network structure? (First author with Lorien Jasny, Angela Guerrero, Michele Barnes, Steven Alexander",
+"- Social-Ecological Networks and Risk: How Is Perceived Social and Ecological Risk Associated with Network Structure? (First author with Angela Guerrero, Michele Barnes, Lorien Jasny, Steven Alexander)",
 "- How do armed conflicts evolve? Relational Event Models in the Context of War (Single author)",
 "- The Use of Network Analysis in Understanding Environmental Outcomes: A Systematic Literature Review (Second author with Antony Emenyu and Lorien Jasny)",
 "- Scoping Review of the Integration of Network and Spatial Concepts and Methods in Investigating Socio-Ecological Systems (Single author)",
@@ -109,7 +109,8 @@ and Politics Collaboration and Empowerment", "*",
 library(tibble)
 tribble(
   ~ Role,  ~ Institution, ~ Where, ~ When,
-  "Data Analysis in Social Science II", "Teaching Assistant, University of Exeter", "United Kingdom", "Sep-Dec 2024", 
+  "Introduction to Research Design in Politics and International Relations", "Teaching Assistant, University of Exeter", "United Kingdom", "Jan-Mar 2025",
+  "Data Analysis in Social Science II", "", "", "Sep-Dec 2024",
   "Introduction to Social Network Analysis", "", "", "Jan-Mar 2021", 
   "Data Analysis in Social Science I",  "", "", "Jan-Mar 2021",
   "Data Analysis in Social Science II", "", "", "Sep-Dec 2020", 
@@ -160,14 +161,15 @@ tribble(
 ```{r}
 library(tibble)
 tribble(
-  ~ Role, ~ When, ~ Institution, 
-  "Researcher", "2024 - Ongoing", "Queensland University of Technology, Australia", 
-  "Contractor", "2017-2018", "Unit for Rural and Agricultural Planning, Colombia",
-  "Research Assistant", "Mar-Nov 2014", "Geography Department University of Exeter, United Kingdom",
-  "Researcher", "2011-2014", "Institute for Research on Biological Resources Alexander von Humboldt, Colombia", 
-  "Contractor", "2007-2010", "National Natural Parks System, Colombia",
-) %>% 
-  detailed_entries(Role, When, Institution)
+  ~ Role, ~ When, ~ Institution, ~ Description,
+  "Research Fellow", "2026 - Ongoing", "Centre for Climate Communication and Data Science (C3DS), University of Exeter, UK", "Building AI tools for debunking climate misinformation.",
+  "Researcher", "2024 - Ongoing", "Queensland University of Technology, Australia", NA,
+  "Contractor", "2017-2018", "Unit for Rural and Agricultural Planning, Colombia", NA,
+  "Research Assistant", "Mar-Nov 2014", "Geography Department University of Exeter, United Kingdom", NA,
+  "Researcher", "2011-2014", "Institute for Research on Biological Resources Alexander von Humboldt, Colombia", NA,
+  "Contractor", "2007-2010", "National Natural Parks System, Colombia", NA,
+) %>%
+  detailed_entries(Role, When, Institution, why = Description)
 ```
 
 # Other Service
